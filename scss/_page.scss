@@ -1,0 +1,23 @@
+.page {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+}
+
+.main-title {
+    font-family: 'Actay Wide';
+    font-weight: bold;
+    font-size: 90px;
+    color:#fff;
+    margin:0px auto 0px;
+    text-align: center;
+}
+//Стрелки для навигации на мобильных устр-вах
+.steps-navigation {
+    display: none;
+}
+//Скрываем бургер меню
+.burger {
+    display: none;
+}

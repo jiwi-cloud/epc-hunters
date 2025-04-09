@@ -1,0 +1,97 @@
+.blob-border {
+    position: absolute;
+    top: -20px;
+    right: -14px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.steps-map__step {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: #ffffff30;
+    border-radius: 35px 0px;
+    padding: 21px 12px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(7.5px);
+
+    font-family: 'Actay', sans-serif;
+    width: 286px;
+    height: 79px;
+    z-index: 5;
+
+    border:3px solid #fff;
+
+    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.35));
+}
+
+.step__circle {
+    flex-shrink: 0;
+    background: #5E7600;
+    color:  #F6FFD2;
+    border-radius: 50%;
+    width: 51px;
+    height: 51px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+        span {
+            text-shadow: 0px 10px 6px rgba(255, 255, 255, 0.45);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+}
+
+.step__text {
+    font-family: 'Actay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #F6FFD2;
+}
+
+.step--1 { top: 287px; left: 70px; }
+.step--2 { top: 533px; left: 147px; }
+.step--3 { top: 630px; left: 497px; }
+.step--4 { top: 400px; left: 425px; }
+.step--5 { top: 328px; right: 70px;}
+.step--6 { top: 484px; right: 209px;}
+
+/* Линии между шагами */
+.line-dotted {
+    position: absolute;
+    z-index: 2;
+    filter: blur(0.7px);
+}
+
+.line-steps-1-2 {
+    left:154px;
+    top: 356px;
+
+}
+
+.line-steps-2-3 {
+    left: 371px;
+    top: 576px;
+}
+
+.line-steps-3-4 {
+    left: 534px;
+    top: 460px;
+}
+
+.line-steps-4-5 {
+    left: 668px;
+    top: 336px;
+}
+
+.line-steps-5-6 {
+    left: 967px;
+    top: 400px;
+}

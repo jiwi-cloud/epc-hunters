@@ -1,0 +1,106 @@
+/* Стили для шагов на мобилке */
+@media (max-width: 767px) {
+    // фон
+    .bkd-gradient  {
+      display: none;
+    }
+    //Header and main-title
+  .header {
+    margin: 30px 15px 0;
+  }
+  .burger {
+    padding: 9.2px 7.5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span{
+      display: block;
+      height: 2px;
+      width: 25px;
+      gap: 8.5px;
+      background-color:#fff;
+    }
+  }
+
+  .header__logo {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .main-title {
+    font-size: 35px;
+    margin: 30px auto;
+  }
+  .header__navigation-link {
+    display: none;
+  }
+  .header__apply {
+    display: none;
+  }
+
+  //Content
+  .step {
+    display: none;
+  }
+
+  .step.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: static;
+    margin: 0 15px;
+  }
+  
+  .steps-map__step {//Переопределяем ширину и высоту
+    padding: 44px 18px;
+    text-align: center;
+    width: auto;
+    height: 217px;
+
+  }
+  //Круг с нумерацией блока 
+  .step__circle {
+    width: 74px;
+    height: 74px;
+    font-size: 37px;
+  }
+  .step__text {
+    z-index: 22;
+  }
+  .blob-border {
+    height: 38px;
+    width: 16px;
+    top: -20px;
+    right: -16px;
+    z-index: 1;
+}
+
+
+  .steps-navigation {
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color:#fff;
+  }
+  .nav-arrow-icon {
+    display:inline-block;
+  }
+
+  .btn-nav-left, .btn-nav-right {
+    display: flex;
+    padding: 3px 0;
+    align-items:center;
+    gap:9px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .line-dotted{
+    display: none;
+  }
+}
+
+

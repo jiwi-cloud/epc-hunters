@@ -1,0 +1,68 @@
+.header {
+    margin: 40px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        color: #fff;
+    }
+}
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header__logo {
+    font-family: 'Actay Wide';
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1;
+}
+.header__navigation-link {
+    font-family: 'Actay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46%;
+    a {
+        display: inline-block;
+        padding: 18px 20px;
+    }
+}
+.header__apply {
+    display: flex;
+    font-size: 20px;
+    position: relative;
+        &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        }
+}
+.apply {
+    font-family: 'Actay';
+    font-weight: normal;
+    font-size: 20px;
+}
+.apply-link {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    color: white;
+    line-height: 12.8px;
+    font-family: 'Actay';
+}
+
+.arrow-icon {
+    margin-left: 20px;
+    align-self: flex-start;
+    height: 12px;
+    width: auto;
+    display: block;
+}

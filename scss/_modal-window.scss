@@ -1,0 +1,126 @@
+
+/* Модальное окно */
+/* Перекрытие фона */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Само окно */
+.modal {
+  background: white;
+  padding: 30px 15px;
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Actay', sans-serif;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  text-align: center;
+}
+
+/* Верхняя часть */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header__right {
+  align-items: center;
+  display: flex;
+  gap: 22px;
+  margin-right: 12px;
+}
+
+.modal-logo {
+  font-family: 'Actay Wide',serif;
+  font-weight: bold;
+  color: #F2F3EF;
+  line-height: 1;
+  font-size: 20px;
+  text-align: start;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 46%;
+}
+
+.modal-close {
+  position: relative;
+  width: 16.25px;
+  height: 16.25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16.25px;
+  height: 1px;
+  background-color: #000;
+  transform-origin: center;
+}
+
+.modal-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Список */
+.modal-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 38px;
+}
+
+.modal-list li {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Кнопка с линией и стрелкой */
+.modal-button {
+  width: 162px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 46%;
+  cursor: pointer;
+}
+
+.arrow-search {
+  font-size: 1.2rem;
+}
+.arrow-search-image {
+  display: block;
+}
+
+/* Открытие */
+.modal-overlay.active {
+  display: flex;
+}

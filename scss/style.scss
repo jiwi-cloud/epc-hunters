@@ -1,0 +1,31 @@
+@import 'add-font'; //подключаем шрифт "Actay"
+@import 'header'; //подключаем шапку сайта
+@import 'page'; //общая страница
+@import 'steps-map'; //общая страница
+@import 'mobile'; //общая страница
+@import 'modal-window'; //общая страница
+
+body {
+    font-family: 'Actay', sans-serif;
+}
+
+.bkd-fullscreen {
+    position: fixed;
+    background: url('/img/background.png') no-repeat center center;
+    background-size: cover;
+    top: 0; /* Ставим на верхнюю часть */
+    left: 0; /* Ставим на левую часть */
+    width: 100%; /* Растягиваем на всю ширину */
+    height: 100%; /* Растягиваем на всю высоту */
+    z-index: 0;
+}
+
+.bkd-gradient {
+    position: absolute;
+    top: 0; /* Ставим на верхнюю часть */
+    left: 0; /* Ставим на левую часть */
+    width: 100%; /* Растягиваем на всю ширину */
+    height: 100%; /* Растягиваем на всю высоту */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 19.82%, rgba(70, 70, 70, 0.2173) 38.45%, rgba(255, 255, 255, 0) 87.39%);
+    z-index: 3; /* Это гарантирует, что градиентный слой будет поверх фона */
+}
